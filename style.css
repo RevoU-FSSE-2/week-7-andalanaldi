@@ -1,0 +1,21 @@
+body {
+    background-color: aquamarine;
+
+    /* background-color: #B5FF7D;
+    background-color: #00AD7C; */
+}
+
+header {
+    text-align: center;
+}
+
+form > fieldset > div {
+    background-color: 
+    #52D681;
+}
+
+button {
+    margin: 25px 250px 25px 450px;
+    background-color: 
+    #FFF8B5;
+}
