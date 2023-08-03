@@ -8,71 +8,87 @@
 </head>
 <body>
     <header>
-        <h1>FIRE with Kuru</h1>
-        <h2>Financial Independence Retired Early with Kuru Kuru</h2>
+        <div class="lead-line">
+            <h1>FIRE with Kuru</h1>
+            <h2>Financial Independence Retired Early with Kuru Kuru</h2>
+        </div>
     </header>
     <main>
         <section>
-            <form action="#" method="GET" class="tracking-form"></form>
-                <fieldset>
-                    <legend>Track your revenues and expenses</legend>
-                    <div>
-                        <select class="fin-select" id="fin" name="fina">
-                            <option>select your transaction</option>
-                            <option value="PS">Paycheck Salary</option>
-                            <option value="">Interest</option>
-                            <option value="">Rent income</option>
-                            <option value="">Business profit</option>
-                            <option value="">Dividend</option>
-                            <option value="">Royalty</option>
-                            <option value="">Fee/Commission</option>
-                            <option value="">Insurance claim</option>
-                            <option value="">Realized Capital Gain</option>
-                            <option value="">Loan?</option>
-                            <option value="">Food & Beverages</option>
-                            <option value="">Phone credit</option>
-                            <option value="">WiFi subscription fee</option>
-                            <option value="">Housing Rent Expense</option>
-                            <option value="">Transportation</option>
-                            <option value="">Leisure & Entertainment</option>
-                            <option value="">Education</option>
-                            <option value="">Healthcare</option>
-                            <option value="">Groceries</option>
-                            <option value="">Travel</option>
-                            <option value="">Shopping</option>
-                            <option value="">Charity</option>
-                            <option value="">Household needs</option>
-                            <option value="">Social circle spending</option>
-                            <option value="">Laundry</option>
-                            <option value="">Hobbies</option>
-                            <option value="">Administrative chores</option>
-                            <option value="">Salon/barbershop</option>
-                            <option value="">Beauty spending</option>
-                            <option value="">Appliances</option>
-                            <option value="">Workplace needs</option>
-                            <option value="">Buying Stock</option>
-                            <option value="">Purchase Right Issue</option>
-                            <option value="">Purchase Warrant</option>
-                            <option value="">Buying Bonds</option>
-                            <option value="">Buying Mutual Fund</option>
-                            <option value="">Utilities Bills</option>
-                            <option value="">Insurance subscription fee</option>
-                            <option value="">Others</option>
-                            <option value=""></option>
-                        
-                        <label for="trans-name">Transaction Name:</label>
-                        <input type="text" id="trans-name" name="trans-name" required>
-                        <label for="det-info">Detail Information:</label>
-                        <input type="text" id="det-info" name="det-info" required>
-                        <label for="idr-amount">IDR:</label>
-                        <input type="number" id="idr-amount" name="idr-amount" required>
-                    </div>
-                </fieldset>
-                <button type="submit" value="submit">Add an Amount</button>
-            </form>    
+            <div class="form-border">
+                <form action="#" method="GET" class="tracking-form"></form>
+                    <fieldset class="field-set">
+                        <legend>Track your revenues and expenses</legend>
+                        <div class="form-space">
+                            <div class="fill">
+                                <label for="fin">Select transaction:</label>
+                                <select class="fin-select" id="fin" name="fin">
+                                    <option value="PS">Salary</option>
+                                    <option value="II">Interest</option>
+                                    <option value="RI">Rent income</option>
+                                    <option value="BP">Profit</option>
+                                    <option value="DI">Dividend</option>
+                                    <option value="RO">Royalty</option>
+                                    <option value="FC">Commission</option>
+                                    <option value="IC">Insurance claim</option>
+                                    <option value="RC">Capital Gain</option>
+                                    <option value="LQ">Loan?</option>
+                                    <option value="FB">F & B</option>
+                                    <option value="PC">Phone credit</option>
+                                    <option value="WS">WiFi sub fee</option>
+                                    <option value="HR">Rent expense</option>
+                                    <option value="TR">Transportation</option>
+                                    <option value="LE">Entertainment</option>
+                                    <option value="ED">Education</option>
+                                    <option value="HE">Healthcare</option>
+                                    <option value="GR">Groceries</option>
+                                    <option value="TV">Travel</option>
+                                    <option value="SH">Shopping</option>
+                                    <option value="CH">Charity</option>
+                                    <option value="HN">Household needs</option>
+                                    <option value="SC">Social circle</option>
+                                    <option value="LA">Laundry</option>
+                                    <option value="HO">Hobbies</option>
+                                    <option value="AC">Admin chores</option>
+                                    <option value="SB">Salon/barbershop</option>
+                                    <option value="BS">Beauty spend</option>
+                                    <option value="AP">Appliances</option>
+                                    <option value="WN">Workplace needs</option>
+                                    <option value="BT">Buying Stock</option>
+                                    <option value="PG">Right Issue</option>
+                                    <option value="PW">Purchase Warrant</option>
+                                    <option value="BB">Buying Bonds</option>
+                                    <option value="BM">Mutual Fund</option>
+                                    <option value="UB">Utilities Bills</option>
+                                    <option value="IS">Insurance sub fee</option>
+                                    <option value="OT">Others</option>
+                                </select>
+                            </div>  
+                            <div class="fill">    
+                                <label for="trans-name">Transaction Name:</label>
+                                <input type="text" id="trans-name" name="trans-name" required>
+                            </div>    
+                            <div class="fill">    
+                                <label for="det-info">Detail Information:</label>
+                                <input type="text" id="det-info" name="det-info" required>
+                            </div>
+                            <div class="fill">    
+                                <label for="idr-amount">IDR:</label>
+                                <input type="number" id="idr-amount" name="idr-amount" required>
+                            </div>
+                        </div>
+                        <button type="submit" value="submit">Add an Amount</button>
+                    </fieldset>
+                </form>
+            </div>        
         </section>
     </main>
-    <footer></footer>
-    <script></script>
+    <footer>
+        <div class="trans-container">
+            <!-- result order container -->
+            <ul class="trans-type-container"></ul>
+        </div>
+    </footer>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
