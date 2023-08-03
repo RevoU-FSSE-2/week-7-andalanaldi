@@ -1,0 +1,22 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "week 7 financial tracking app using typescript task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RevoU-FSSE-2/week-7-andalanaldi.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Aldi Andalan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RevoU-FSSE-2/week-7-andalanaldi/issues"
+  },
+  "homepage": "https://github.com/RevoU-FSSE-2/week-7-andalanaldi#readme"
+}

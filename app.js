@@ -1,27 +1,24 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Quote_js_1 = require("./Quote.js");
-var Clearance_js_1 = require("./Clearance.js");
-var ContainerTemplate_js_1 = require("./ContainerTemplate.js");
-// console.log("w7 assignment")
-var form = document.querySelector(".tracking-form");
-var strans = document.querySelector("#fin");
-var transn = document.querySelector("#trans-name");
-var deti = document.querySelector("#det-info");
-var iamount = document.querySelector("#idr-amount");
-var ul = document.querySelector("ul");
-var container = new ContainerTemplate_js_1.ContainerTemplate(ul);
-form === null || form === void 0 ? void 0 : form.addEventListener("submit", function (e) {
+import { Quote } from "./Quote.js";
+import { Clearance } from "./Clearance.js";
+import { ContainerTemplate } from "./ContainerTemplate.js";
+
+const form = document.querySelector(".tracking-form");
+const strans = document.querySelector("#fin");
+const transn = document.querySelector("#trans-name");
+const deti = document.querySelector("#det-info");
+const iamount = document.querySelector("#idr-amount");
+const ul = document.querySelector("ul");
+const container = new ContainerTemplate(ul);
+form.addEventListener("submit", (e) => {
     e.preventDefault();
-    var values = [transn === null || transn === void 0 ? void 0 : transn.ariaValueText, deti === null || deti === void 0 ? void 0 : deti.ariaValueText, iamount === null || iamount === void 0 ? void 0 : iamount.ariaValueNow].filter(Boolean);
-    var doc;
-    if ((transn === null || transn === void 0 ? void 0 : transn.ariaValueText) === "Quote") {
-        var customer = values[0], detiVal = values[1], iamountVal = values[2];
-        doc = new Quote_js_1.Quote(customer, detiVal, parseFloat(iamountVal));
+    let values;
+    values = [transn.value, deti.value, iamount.valueAsNumber];
+    let doc;
+    if (strans.value === "Quote") {
+        doc = new Quote(...values);
     }
     else {
-        var beneficiary = values[0], detiVal = values[1], iamountVal = values[2];
-        doc = new Clearance_js_1.Clearance(beneficiary, detiVal, parseFloat(iamountVal));
+        doc = new Clearance(...values);
     }
     container.render(doc, strans.value, "end");
 });
