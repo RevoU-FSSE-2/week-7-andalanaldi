@@ -16,66 +16,65 @@
     <main>
         <section>
             <div class="form-border">
-                <!-- action="#" method="GET" -->
-                <form class="tracking-form"></form>
+                <form action="#" method="GET" class="tracking-form">
                     <fieldset class="field-set">
                         <legend>Track your revenues and expenses</legend>
                         <div class="form-space">
                             <div class="fill">
                                 <label for="fin">Select transaction:</label>
                                 <select class="fin-select" id="fin" name="fin">
-                                    <option value="PS">Salary</option>
-                                    <option value="II">Interest</option>
-                                    <option value="RI">Rent income</option>
-                                    <option value="BP">Profit</option>
-                                    <option value="DI">Dividend</option>
-                                    <option value="RO">Royalty</option>
-                                    <option value="FC">Commission</option>
-                                    <option value="IC">Insurance claim</option>
-                                    <option value="RC">Capital Gain</option>
-                                    <option value="LQ">Loan?</option>
-                                    <option value="FB">F & B</option>
-                                    <option value="PC">Phone credit</option>
-                                    <option value="WS">WiFi sub fee</option>
-                                    <option value="HR">Rent expense</option>
-                                    <option value="TR">Transportation</option>
-                                    <option value="LE">Entertainment</option>
-                                    <option value="ED">Education</option>
-                                    <option value="HE">Healthcare</option>
-                                    <option value="GR">Groceries</option>
-                                    <option value="TV">Travel</option>
-                                    <option value="SH">Shopping</option>
-                                    <option value="CH">Charity</option>
-                                    <option value="HN">Household needs</option>
-                                    <option value="SC">Social circle</option>
-                                    <option value="LA">Laundry</option>
-                                    <option value="HO">Hobbies</option>
-                                    <option value="AC">Admin chores</option>
-                                    <option value="SB">Salon/barbershop</option>
-                                    <option value="BS">Beauty spend</option>
-                                    <option value="AP">Appliances</option>
-                                    <option value="WN">Workplace needs</option>
-                                    <option value="BT">Buying Stock</option>
-                                    <option value="PG">Right Issue</option>
-                                    <option value="PW">Purchase Warrant</option>
-                                    <option value="BB">Buying Bonds</option>
-                                    <option value="BM">Mutual Fund</option>
-                                    <option value="UB">Utilities Bills</option>
-                                    <option value="IS">Insurance sub fee</option>
-                                    <option value="OT">Others</option>
+                                    <option value="Salary">Salary</option>
+                                    <option value="Interest">Interest</option>
+                                    <option value="Rent income">Rent income</option>
+                                    <option value="Profit">Profit</option>
+                                    <option value="Dividend">Dividend</option>
+                                    <option value="Royalty">Royalty</option>
+                                    <option value="Commission">Commission</option>
+                                    <option value="Insurance claim">Insurance claim</option>
+                                    <option value="Capital Gain">Capital Gain</option>
+                                    <option value="Loan?">Loan?</option>
+                                    <option value="F & B">F & B</option>
+                                    <option value="Phone credit">Phone credit</option>
+                                    <option value="WiFi sub fee">WiFi sub fee</option>
+                                    <option value="Rent expense">Rent expense</option>
+                                    <option value="Transportation">Transportation</option>
+                                    <option value="Entertainment">Entertainment</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Groceries">Groceries</option>
+                                    <option value="Travel">Travel</option>
+                                    <option value="Shopping">Shopping</option>
+                                    <option value="Charity">Charity</option>
+                                    <option value="Household needs">Household needs</option>
+                                    <option value="Social circle">Social circle</option>
+                                    <option value="Laundry">Laundry</option>
+                                    <option value="Hobbies">Hobbies</option>
+                                    <option value="Admin chores">Admin chores</option>
+                                    <option value="Salon/barbershop">Salon/barbershop</option>
+                                    <option value="Beauty spend">Beauty spend</option>
+                                    <option value="Appliances">Appliances</option>
+                                    <option value="Workplace needs">Workplace needs</option>
+                                    <option value="Buying Stock">Buying Stock</option>
+                                    <option value="Right Issue">Right Issue</option>
+                                    <option value="Purchase Warrant">Purchase Warrant</option>
+                                    <option value="Buying Bonds">Buying Bonds</option>
+                                    <option value="Mutual Fund">Mutual Fund</option>
+                                    <option value="Utilities Bills">Utilities Bills</option>
+                                    <option value="Insurance sub fee">Insurance sub fee</option>
+                                    <option value="Others">Others</option>
                                 </select>
                             </div>  
                             <div class="fill">    
                                 <label for="trans-name">Transaction Name:</label>
-                                <input type="text" id="trans-name" name="trans-name" required>
+                                <input type="text" id="trans-name" name="trans-name" placeholder="ex:Salary from/Pay for" required>
                             </div>    
                             <div class="fill">    
-                                <label for="det-info">Detail Information:</label>
-                                <input type="text" id="det-info" name="det-info" required>
+                                <label for="det-info">Month:</label>
+                                <input type="text" id="det-info" name="det-info" placeholder="ex:July" required>
                             </div>
                             <div class="fill">    
                                 <label for="idr-amount">IDR:</label>
-                                <input type="number" id="idr-amount" name="idr-amount" required>
+                                <input type="number" id="idr-amount" name="idr-amount" placeholder="9000000" required>
                             </div>
                         </div>
                         <button type="submit" value="submit">Add an Amount</button>
@@ -90,6 +89,7 @@
             <ul class="trans-type-container"></ul>
         </div>
     </footer>
+    <!-- <script>var exports={};</script> -->
     <script type="module" src="app.js"></script>
 </body>
 </html>
