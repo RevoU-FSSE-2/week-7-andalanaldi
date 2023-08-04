@@ -3,19 +3,19 @@
 body {
     background-color: aquamarine;
     font-family: Open Sans, sans-serif;
-    /* background-color: #B5FF7D;
-    background-color: #52D681; */
 }
 
 header {
     text-align: center;
     color: #5D13E7;
     font-weight: bolder;
+    text-shadow: 0.0625rem 0.0625rem #2f2e39;
 }
 
 .field-set{
     border-radius: 25px;
     color: #FFF8B5;
+    text-shadow: 0.0625rem 0.0625rem #2f2e39;
 }
 
 .form-border {
@@ -48,4 +48,27 @@ button {
     /* margin: 25px 25px 25px 1050px; */
     /* margin: 25px 250px 25px 450px; */
     color: #5D13E7;
+    background-color: #B5FF7D;
+    border-radius: 6px;
+}
+
+li {
+    padding: 5px 12px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #52D681;
+    margin: 12px auto;
+    list-style-type: none;
+    text-shadow: 0.0625rem 0.0625rem #2f2e39;
+}
+
+li h3 {
+    color: #5D13E7;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+li p {
+    color: #FFF8B5;
+    margin: 10px 0 0;
 }
