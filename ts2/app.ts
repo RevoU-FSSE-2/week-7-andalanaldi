@@ -1,3 +1,7 @@
+const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'IDR',
+  });
 class Quote {
     private customer: string;
     private deti: string;
@@ -9,8 +13,10 @@ class Quote {
         this.iamount = iamount;
     }
     format() {
+        // Format the iamount as currency
+        const formattedAmount = formatter.format(this.iamount);
         // return `${this.client} owned Rp${this.amount} for ${this.details}`;
-        return `You have ${this.customer} as much as ${this.iamount} IDR for month of ${this.deti}`;
+        return `You have ${this.customer} as much as ${formattedAmount} for month of ${this.deti}`;
     }
 }
 
@@ -25,8 +31,10 @@ class Clearance {
         this.iamount = iamount;
     }
     format() {
+        // Format the iamount as currency
+        const formattedAmount = formatter.format(this.iamount);
         // return `${this.recipient} is have Rp${this.amount} for ${this.details}`;
-        return `You have ${this.beneficiary} as much as ${this.iamount} IDR for month of ${this.deti}`;
+        return `You have ${this.beneficiary} as much as ${formattedAmount} for month of ${this.deti}`;
     }
 }
 
@@ -70,15 +78,17 @@ if (isHTMLFormElement(form)) {
 
         const ul = document.querySelector("ul")!;
         const container = new ContainerTemplate(ul);
-        let values: string[] = [transn?.ariaValueText, deti?.ariaValueText, iamount?.ariaValueNow].filter(Boolean) as string[];
+
+        let values: string[] = [transn?.value, deti?.value, iamount?.valueAsNumber].filter(Boolean) as string[];
         let doc: Quote | Clearance;
-        if (transn?.ariaValueText === "Quote") {
+        if (transn?.value === "Quote") {
             const [customer, detiVal, iamountVal] = values;
             doc = new Quote(customer, detiVal, parseFloat(iamountVal));
         } else {
             const [beneficiary, detiVal, iamountVal] = values;
             doc = new Clearance(beneficiary, detiVal, parseFloat(iamountVal));
         }
+
         container.render(doc, strans!.value, "end")
     });
 }
