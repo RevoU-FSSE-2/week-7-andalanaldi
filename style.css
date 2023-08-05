@@ -12,6 +12,122 @@ header {
     text-shadow: 0.0625rem 0.0625rem #2f2e39;
 }
 
+.kuru-coin {
+    display: grid;
+    max-width: 59.375px;
+    margin-left: 812.5px;
+    /* grid-template-columns: auto; */
+        /* margin: 0 auto; */
+        /* margin: 15px 0 5px; */
+        /* border: 0; */
+        /* padding: 5px; */
+        /* min-width: 40px; */
+        /* margin-right: 1px; */
+}
+
+.kuru-coin > img {
+    border-radius: 25px;
+}
+
+@media (min-width:320px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 50px;
+    }
+}
+
+@media (min-width:375px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width:425px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 110px;
+    }
+}
+
+@media (min-width:768px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 185px;
+    }
+}
+
+@media (min-width:1024px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 305px;
+    }
+}
+
+@media (min-width:1440px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 515px;
+    }
+}
+
+@media (min-width:1788px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 810px;
+    }
+}
+
+@media (min-width:2160px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 950px;
+    }
+}
+
+@media (min-width:2560px) {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 1070px;
+    }
+}
+
+/* @media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 810px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .kuru-coin {
+        max-width: 59.375px;
+        margin-left: 950px;
+    }
+} */
+
+.kuru-coins {
+grid-column: 1 / 2;
+grid-row: 1 / 1;
+}
+
+.kuru-pink {
+grid-column: 2 / 2;
+grid-row: 1 / 1;    
+}
+
+@media (min-width:320px) and (max-width:426px) {
+        .kuru-coins {
+        grid-column: 1 ;
+        grid-row: 1 / 2;
+        }
+        
+        .kuru-pink {
+        grid-column: 1 ;
+        grid-row: 2 / 2;    
+        }
+}​
+
 .field-set{
     border-radius: 25px;
     color: #FFF8B5;
