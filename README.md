@@ -111,7 +111,12 @@ Author still needs help from https://chat.openai.com/ and https://app.leonardo.a
 1. Doughnut chart to track finance.
 2. Stock price watch to estimate assets value.
 
-Nevertheless, maybe the time is not enough to do that hopefully it could be realized thourgh https://www.chartjs.org/ later on.
+Nevertheless, maybe the time is not enough to do that hopefully it could be realized thourgh https://www.chartjs.org/ later on. By the way, here are some examples of images generation from https://app.leonardo.ai/ :
+
+(https://github.com/andalanaldi/week-7-andalanaldi/blob/main/kuru-img/V250_DreamShaper_v7_0(5).jpg/?raw=true)
+(https://github.com/andalanaldi/week-7-andalanaldi/blob/main/kuru-img/V250_DreamShaper_v7_04.jpg/?raw=true)
+(https://github.com/andalanaldi/week-7-andalanaldi/blob/main/kuru-img/V250_DreamShaper_v7_kuru0.jpg/?raw=true)
+(https://github.com/andalanaldi/week-7-andalanaldi/blob/main/kuru-img/V250_DreamShaper_v7_kuru120(1).jpg/?raw=true)
 
 If you have any questions or want any discussion please contact author at andalanaldi@gmail.com. Thank you for your attention.
 
